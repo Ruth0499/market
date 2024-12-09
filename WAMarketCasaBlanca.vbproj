@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E082F99-5A54-4640-A9FF-A7E4D360E523}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WAMarketCasaBlanca.My.MyApplication</StartupObject>
+    <RootNamespace>WAMarketCasaBlanca</RootNamespace>
+    <AssemblyName>WAMarketCasaBlanca</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WAMarketCasaBlanca.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WAMarketCasaBlanca.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capa_Datos\D_Cliente.vb" />
+    <Compile Include="Capa_Datos\D_Codigo.vb" />
+    <Compile Include="Capa_Datos\D_DetalleAlmacen.vb" />
+    <Compile Include="Capa_Datos\D_Empleado.vb" />
+    <Compile Include="Capa_Datos\D_Marca.vb" />
+    <Compile Include="Capa_Datos\D_Producto.vb" />
+    <Compile Include="Capa_Datos\D_Proveedor.vb" />
+    <Compile Include="Capa_Datos\D_Sucursal.vb" />
+    <Compile Include="Capa_Datos\D_UnidadMedida.vb" />
+    <Compile Include="Capa_Entidad\E_Almacen.vb" />
+    <Compile Include="Capa_Entidad\E_Cliente.vb" />
+    <Compile Include="Capa_Entidad\E_Empleado.vb" />
+    <Compile Include="Capa_Entidad\E_Marca.vb" />
+    <Compile Include="Capa_Entidad\E_Producto.vb" />
+    <Compile Include="Capa_Entidad\E_Proveedor.vb" />
+    <Compile Include="Capa_Entidad\E_Sucursal.vb" />
+    <Compile Include="Capa_Entidad\E_UnidadMedida.vb" />
+    <Compile Include="Capa_Negocio\N_Cliente.vb" />
+    <Compile Include="Capa_Negocio\N_Codigo.vb" />
+    <Compile Include="Capa_Negocio\N_DetalleAlmacen.vb" />
+    <Compile Include="Capa_Negocio\N_Empleado.vb" />
+    <Compile Include="Capa_Negocio\N_Marca.vb" />
+    <Compile Include="Capa_Negocio\N_Producto.vb" />
+    <Compile Include="Capa_Negocio\N_Proveedor.vb" />
+    <Compile Include="Capa_Negocio\N_Sucursal.vb" />
+    <Compile Include="Capa_Negocio\N_UnidadMedida.vb" />
+    <Compile Include="Clases\Almacen.vb" />
+    <Compile Include="Clases\Articulo.vb" />
+    <Compile Include="Clases\Clase_num.vb" />
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Capa_Datos\D_Categoria.vb" />
+    <Compile Include="Capa_Entidad\E_Categoria.vb" />
+    <Compile Include="FrmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.vb">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AperCaja.Designer.vb">
+      <DependentUpon>Frm_AperCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AperCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscaCliente.Designer.vb">
+      <DependentUpon>Frm_BuscaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscaProducto.Designer.vb">
+      <DependentUpon>Frm_BuscaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscaProveedor.Designer.vb">
+      <DependentUpon>Frm_BuscaProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscaProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_categorias.Designer.vb">
+      <DependentUpon>Frm_categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Clientes.Designer.vb">
+      <DependentUpon>Frm_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsCliente.Designer.vb">
+      <DependentUpon>Frm_ConsCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsProducto.Designer.vb">
+      <DependentUpon>Frm_ConsProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsProveedor.Designer.vb">
+      <DependentUpon>Frm_ConsProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CuadreCaja.Designer.vb">
+      <DependentUpon>Frm_CuadreCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CuadreCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Empleados.Designer.vb">
+      <DependentUpon>Frm_Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_IngSalMercaderia.Designer.vb">
+      <DependentUpon>Frm_IngSalMercaderia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_IngSalMercaderia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Inventario.Designer.vb">
+      <DependentUpon>Frm_Inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Marcas.Designer.vb">
+      <DependentUpon>Frm_Marcas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Marcas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuPrincipal.Designer.vb">
+      <DependentUpon>Frm_MenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_productos.Designer.vb">
+      <DependentUpon>Frm_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Proveedores.Designer.vb">
+      <DependentUpon>Frm_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sucursal.Designer.vb">
+      <DependentUpon>Frm_Sucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TipoDocumento.Designer.vb">
+      <DependentUpon>Frm_TipoDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TipoDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_UnidadMedida.Designer.vb">
+      <DependentUpon>Frm_UnidadMedida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_UnidadMedida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Usuario.Designer.vb">
+      <DependentUpon>Frm_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ventas.Designer.vb">
+      <DependentUpon>Frm_Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Capa_Negocio\N_Categoria.vb" />
+    <Compile Include="Send.vb" />
+    <Compile Include="Usuario.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AperCaja.resx">
+      <DependentUpon>Frm_AperCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscaCliente.resx">
+      <DependentUpon>Frm_BuscaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscaProducto.resx">
+      <DependentUpon>Frm_BuscaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscaProveedor.resx">
+      <DependentUpon>Frm_BuscaProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_categorias.resx">
+      <DependentUpon>Frm_categorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Clientes.resx">
+      <DependentUpon>Frm_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsCliente.resx">
+      <DependentUpon>Frm_ConsCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsProducto.resx">
+      <DependentUpon>Frm_ConsProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsProveedor.resx">
+      <DependentUpon>Frm_ConsProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CuadreCaja.resx">
+      <DependentUpon>Frm_CuadreCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Empleados.resx">
+      <DependentUpon>Frm_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_IngSalMercaderia.resx">
+      <DependentUpon>Frm_IngSalMercaderia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Inventario.resx">
+      <DependentUpon>Frm_Inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Marcas.resx">
+      <DependentUpon>Frm_Marcas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MenuPrincipal.resx">
+      <DependentUpon>Frm_MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_productos.resx">
+      <DependentUpon>Frm_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Proveedores.resx">
+      <DependentUpon>Frm_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sucursal.resx">
+      <DependentUpon>Frm_Sucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TipoDocumento.resx">
+      <DependentUpon>Frm_TipoDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_UnidadMedida.resx">
+      <DependentUpon>Frm_UnidadMedida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Usuario.resx">
+      <DependentUpon>Frm_Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Ventas.resx">
+      <DependentUpon>Frm_Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\CasaBlanca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Ampeross-Ampola-Floppy-drive-3-12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Custom-Icon-Design-Pretty-Office-9-Delete-file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Custom-Icon-Design-Pretty-Office-9-Edit-file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Custom-Icon-Design-Pretty-Office-9-New-file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Hopstarter-Sleek-Xp-Basic-Close-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Custom-Icon-Design-Pretty-Office-7-Generate-keys.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Categorias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Marcas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\UnidadMedida.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Sucursal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Clientes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Proveedores.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Productos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Empleado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Usuario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\TipoDocumento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Aha-Soft-Large-User-Notary.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Delacro-Id-Printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\SantoDomingo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\CajaVenta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Gakuseisean-Ivista-2-Misc-New-Database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon_Button\Oxygen-Icons.org-Oxygen-Actions-document-edit.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
